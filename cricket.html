@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        header {
+            background-image: url(./cricket-stadium-vector.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .field {
+            border: 2px dashed lightgreen;
+        }
+        .bat {
+            transition: transform 0.2s ease;
+        }
+        .ball {
+            height: 38px;
+            width: 38px;
+            border: 3px solid darkred;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            left: 463px;
+            transition: transform 1s ease-out 0.23s;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .field:hover .ball {
+            transform: translate(800px, -150px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="field">
+            <img class="bat" src="./cricket-bat.png" alt="">
+            <div class="ball"></div>
+        </div>
+    </header>
+</body>
+
+</html>

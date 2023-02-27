@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .flex{
+            display: flex;
+            gap: 1px;
+            background:linear-gradient(0,0,0,0.5);
+            width:700px;
+            height: 200px;
+        }
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 2px solid lightslategrey;
+            background-image: url(./red-panda-hide.jpg);
+            background-size: 200px 100px;
+            background-repeat: no-repeat;
+            transition: height 1s ease-in-out, width 1s ease-in-out,background-image 1s ease-in-out, background-size 1s ease-in-out;
+        }
+        .box:hover{
+            height: 200px;
+            width: 300px;
+            background-image: url(./red-panda-seen.jpg);
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex">
+    <div class="box">
+        <h3>Transition-01</h3>
+    </div>
+    <div class="box">
+        <h3>Transition-02</h3>
+    </div>
+    <div class="box">
+        <h3>Transition-03</h3>
+    </div>
+</section>
+</body>
+</html>
