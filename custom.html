@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom</title>
+    <style>
+        :root{
+            --primary-color: lightgreen;
+            --secund-color: yellow;
+            --base-border: 5px solid skyblue;
+            --special-color: orange;
+            --primary-margin: 10px;
+        }
+        .box{
+            background-color: var(--primary-color);
+            height: 300px;
+            width: 300px;
+            margin: var(--primary-margin);
+        }
+        .heading{
+            background-color: var(--secund-color);
+        }
+        #boss{
+            border: var(--base-border);
+            background-color: var(--special-color);
+            width: calc(300px - 40px );
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <h3 class="heading">heading-1</h3>
+        <P>BOX01</P>
+    </div>
+    <div class="box">
+        <h3 class="heading">heading-2</h3>
+        <P>BOX02</P>
+    </div>
+    <div class="box">
+        <h3 class="heading">heading-3</h3>
+        <P>BOX03</P>
+    </div>
+    <div id="boss" class="box">
+        <h3 class="heading">heading-4</h3>
+        <P>BOX04</P>
+    </div>
+    <div class="box">
+        <h3 class="heading">heading-5</h3>
+        <P>BOX05</P>
+    </div>
+</body>
+</html>
